@@ -4,7 +4,19 @@
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello, World!");
+            KalkylatornCtoF kalkylator = new KalkylatornCtoF();
+
+            Console.Write("Hej! Skriv in hur många Celsius det är idag : ");
+            Double Celsius = Convert.ToDouble(Console.ReadLine());
+
+            kalkylator.Celsius = Celsius;
+
+            kalkylator.ConvertCtoF();
+
+
+            Console.WriteLine($"Detta är hur många grader det är i Farenhite : {kalkylator.Farenhite}");
         }
+
+   
     }
-}
+}   
